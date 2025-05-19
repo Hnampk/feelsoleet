@@ -63,6 +63,26 @@ func main() {
 	// leetcode.TesthasCycle()
 
 	// 2. Add Two Numbers
-	leetcode.TestaddTwoNumbers()
+	// leetcode.TestaddTwoNumbers()
 
+	// 200. Number of Islands
+	// leetcode.TestnumIslands()
+
+	// 130. Surrounded Regions
+	// leetcode.Testsolve()
+
+	// 133. Clone Graph
+	// leetcode.TestcloneGraph()
+
+	// 399. Evaluate Division
+	// leetcode.TestcalcEquation()
+
+	// 162. Find Peak Element
+	// leetcode.TestfindPeakElement()
+
+	// 33. Search in Rotated Sorted Array
+	// leetcode.Testsearch()
+
+	// 228. Summary Ranges
+	leetcode.TestsummaryRanges()
 }
