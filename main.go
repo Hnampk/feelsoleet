@@ -63,6 +63,20 @@ func main() {
 	// leetcode.TesthasCycle()
 
 	// 2. Add Two Numbers
-	leetcode.TestaddTwoNumbers()
+	// leetcode.TestaddTwoNumbers()
+
+	// 373. Find K Pairs with Smallest Sums
+	// leetcode.TestkSmallestPairs()
+
+	// 35. Search Insert Position
+	// leetcode.TestsearchInsert()
+
+	// 74. Search a 2D Matrix
+	leetcode.TestsearchMatrix()
+}
+
+func todo() {
+	// 224. Basic Calculator
+	// leetcode.Testcalculate() // todo
 
 }
