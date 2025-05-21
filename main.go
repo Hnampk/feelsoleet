@@ -1,8 +1,12 @@
 package main
 
-import "feelsoleet/leetcode"
+import (
+	"feelsoleet/sorting"
+	"log"
+)
 
 func main() {
+	algo()
 	// 28. Find the Index of the First Occurrence in a String
 	// leetcode.TeststrStr()
 
@@ -72,11 +76,51 @@ func main() {
 	// leetcode.TestsearchInsert()
 
 	// 74. Search a 2D Matrix
-	leetcode.TestsearchMatrix()
+	// leetcode.TestsearchMatrix()
+
+	// 200. Number of Islands
+	// leetcode.TestnumIslands()
+
+	// 130. Surrounded Regions
+	// leetcode.Testsolve()
+
+	// 133. Clone Graph
+	// leetcode.TestcloneGraph()
+
+	// 399. Evaluate Division
+	// leetcode.TestcalcEquation()
+
+	// 162. Find Peak Element
+	// leetcode.TestfindPeakElement()
+
+	// 33. Search in Rotated Sorted Array
+	// leetcode.Testsearch()
+
+	// 228. Summary Ranges
+	// leetcode.TestsummaryRanges()
 }
 
 func todo() {
 	// 224. Basic Calculator
 	// leetcode.Testcalculate() // todo
+}
 
+func algo() {
+	log.Printf("===== Start Algo =====")
+	nums := []int{4, 1, 3, 1, 5, 2}
+	log.Printf("before SelectionSort: %+v", nums)
+	sorting.SelectionSort(nums)
+	log.Printf("after SelectionSort: %+v", nums)
+
+	log.Printf("======================")
+	nums = []int{4, 1, 3, 1, 5, 2}
+	log.Printf("before BubbleSort: %+v", nums)
+	sorting.BubbleSort(nums)
+	log.Printf("after BubbleSort: %+v", nums)
+
+	log.Printf("======================")
+	nums = []int{4, 1, 3, 1, 5, 2}
+	log.Printf("before InsertionSort: %+v", nums)
+	sorting.InsertionSort(nums)
+	log.Printf("after InsertionSort: %+v", nums)
 }
