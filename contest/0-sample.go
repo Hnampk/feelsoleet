@@ -1,4 +1,4 @@
-package leetcode
+package contest
 
 import "log"
 
@@ -29,7 +29,7 @@ func Testsample() {
 		// if res != testcase.expected {
 		// 	log.Panicf("FAILED. %+v, %+v, Expected %+v but got %+v", testcase.numbers, testcase.target, testcase.expected, res)
 		// }
-		// if len(res) != len(testcase.expected) {
+		// if len(res) != 2 {
 		// 	log.Panicf("FAILED. %+v, %+v, Expected %+v but got %+v", testcase.numbers, testcase.target, testcase.expected, res)
 		// }
 		// for i := 0; i < len(testcase.expected); i++ {

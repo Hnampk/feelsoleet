@@ -1,6 +1,8 @@
 package main
 
 import (
+	"feelsoleet/contest"
+	"feelsoleet/leetcode"
 	"feelsoleet/sorting"
 	"log"
 )
@@ -123,4 +125,20 @@ func algo() {
 	log.Printf("before InsertionSort: %+v", nums)
 	sorting.InsertionSort(nums)
 	log.Printf("after InsertionSort: %+v", nums)
+
+	// 3355. Zero Array Transformation I
+	// leetcode.TestisZeroArray()
+
+	// 56. Merge Intervals
+	// leetcode.Testmerge()
+
+	// 209. Minimum Size Subarray Sum
+	leetcode.TestminSubArrayLen()
+
+	// RunContest()
+}
+
+func RunContest() {
+	// Q1. Smallest Index With Digit Sum Equal to Index
+	contest.TestsmallestIndex()
 }
