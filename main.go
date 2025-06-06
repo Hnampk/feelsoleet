@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	algo()
+	// algo()
 	// 28. Find the Index of the First Occurrence in a String
 	// leetcode.TeststrStr()
 
@@ -100,11 +100,92 @@ func main() {
 
 	// 228. Summary Ranges
 	// leetcode.TestsummaryRanges()
+
+	// 108. Convert Sorted Array to Binary Search Tree
+	// leetcode.TestsortedArrayToBST()
+
+	// 226. Invert Binary Tree
+	// leetcode.TestinvertTree()
+
+	// 190. Reverse Bits
+	// leetcode.TestreverseBits()
+
+	// 191. Number of 1 Bits
+	// leetcode.TesthammingWeight()
+
+	// 1763. Longest Nice Substring
+	// leetcode.TestlongestNiceSubstring()
+
+	// 427. Construct Quad Tree
+	// leetcode.Testconstruct()
+
+	// 101. Symmetric Tree
+	// leetcode.TestisSymmetric()
+
+	// 1382. Balance a Binary Search Tree
+	// leetcode.TestbalanceBST()
+
+	// 105. Construct Binary Tree from Preorder and Inorder Traversal
+	// leetcode.TestbuildTree()
+
+	// 558. Logical OR of Two Binary Grids Represented as Quad-Trees
+	// leetcode.Testintersect()
+
+	// 106. Construct Binary Tree from Inorder and Postorder Traversal
+	// leetcode.TestbuildTree106()
+
+	// 395. Longest Substring with At Least K Repeating Characters
+	// leetcode.TestlongestSubstring()
+
+	// 654. Maximum Binary Tree
+	// leetcode.TestconstructMaximumBinaryTree()
+
+	// 117. Populating Next Right Pointers in Each Node II
+	// leetcode.Testconnect117()
+
+	// 257. Binary Tree Paths
+	// leetcode.TestbinaryTreePaths()
+
+	// 401. Binary Watch
+	// leetcode.TestreadBinaryWatch()
+
+	// 46. Permutations
+	// leetcode.Testpermute()
+
+	// 1863. Sum of All Subset XOR Totals
+	// leetcode.TestsubsetXORSum()
+
+	// 988. Smallest String Starting From Leaf
+	// leetcode.TestsmallestFromLeaf()
+
+	// 77. Combinations
+	// leetcode.Testcombine()
+
+	// 17. Letter Combinations of a Phone Number
+	// leetcode.TestletterCombinations()
+
+	// 51. N-Queens
+	// leetcode.TestsolveNQueens()
+
+	// 39. Combination Sum
+	// leetcode.TestcombinationSum()
+
+	// 22. Generate Parentheses
+	// leetcode.TestgenerateParenthesis()
+
+	// 79. Word Search
+	// leetcode.Testexist()
+
+	// 64. Minimum Path Sum
+	leetcode.TestminPathSum()
 }
 
 func todo() {
 	// 224. Basic Calculator
 	// leetcode.Testcalculate() // todo
+
+	// 2359. Find Closest Node to Given Two Nodes
+	// leetcode.TestclosestMeetingNode()
 }
 
 func algo() {
@@ -142,3 +223,9 @@ func RunContest() {
 	// Q1. Smallest Index With Digit Sum Equal to Index
 	contest.TestsmallestIndex()
 }
+
+// divide and conquer
+// - todo Tower of Hanoi problem
+// - todo Large integer multiplication
+// - todo binary search using recursion instead of iteration
+// - todo build tree https://www.hello-algo.com/en/chapter_divide_and_conquer/build_binary_tree_problem/#4-code-implementation

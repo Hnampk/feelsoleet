@@ -3,36 +3,36 @@ package leetcode
 import "log"
 
 /**
- * Definition for a Node.
- * type Node struct {
+ * Definition for a Node133.
+ * type Node133 struct {
  *     Val int
- *     Neighbors []*Node
+ *     Neighbors []*Node133
  * }
  */
 
-type Node struct {
+type Node133 struct {
 	Val       int
-	Neighbors []*Node
+	Neighbors []*Node133
 }
 
-func cloneGraph(node *Node) *Node {
+func cloneGraph(node *Node133) *Node133 {
 	if node == nil {
 		return nil
 	}
 
-	visited := make(map[int]*Node)
+	visited := make(map[int]*Node133)
 
 	return bfs133(node, visited)
 }
 
-func dfs133(node *Node, visited map[int]*Node) *Node {
+func dfs133(node *Node133, visited map[int]*Node133) *Node133 {
 	if n, ok := visited[node.Val]; ok {
 		return n
 	}
 
-	n := &Node{
+	n := &Node133{
 		Val:       node.Val,
-		Neighbors: []*Node{},
+		Neighbors: []*Node133{},
 	}
 	visited[node.Val] = n
 
@@ -43,27 +43,27 @@ func dfs133(node *Node, visited map[int]*Node) *Node {
 	return n
 }
 
-func bfs133(node *Node, visited map[int]*Node) *Node {
-	q := []*Node{}
+func bfs133(node *Node133, visited map[int]*Node133) *Node133 {
+	q := []*Node133{}
 	q = append(q, node)
 
-	visited[node.Val] = &Node{
+	visited[node.Val] = &Node133{
 		Val:       node.Val,
-		Neighbors: []*Node{},
+		Neighbors: []*Node133{},
 	}
 
 	for len(q) > 0 {
 		curr := q[0]
 		q = q[1:]
 
-		var n *Node = visited[curr.Val] // always found the node, because it's defined as a neighbor
+		var n *Node133 = visited[curr.Val] // always found the node, because it's defined as a neighbor
 
 		for _, neighbor := range curr.Neighbors {
 			if found, ok := visited[neighbor.Val]; !ok {
 				q = append(q, neighbor)
-				newNode := &Node{
+				newNode := &Node133{
 					Val:       neighbor.Val,
-					Neighbors: []*Node{},
+					Neighbors: []*Node133{},
 				}
 
 				n.Neighbors = append(n.Neighbors, newNode)
@@ -77,7 +77,7 @@ func bfs133(node *Node, visited map[int]*Node) *Node {
 	return visited[1]
 }
 
-func cloneGraph2(node *Node) *Node {
+func cloneGraph2(node *Node133) *Node133 {
 	// recursively check through neighbor nodes to create nodes.
 	//  we need a pointer to the parent nodes to add the edges after creating a new node
 
@@ -85,23 +85,23 @@ func cloneGraph2(node *Node) *Node {
 		return nil
 	}
 
-	visited := make(map[int]*Node)
-	copiedNode := &Node{
+	visited := make(map[int]*Node133)
+	copiedNode := &Node133{
 		Val:       node.Val,
-		Neighbors: []*Node{},
+		Neighbors: []*Node133{},
 	}
 	visited[node.Val] = copiedNode
 	dfs1332(node, copiedNode, visited)
 	return copiedNode
 
 }
-func dfs1332(node *Node, clone *Node, visited map[int]*Node) {
+func dfs1332(node *Node133, clone *Node133, visited map[int]*Node133) {
 	for _, neighbor := range node.Neighbors {
-		var newNode *Node
+		var newNode *Node133
 		if n, ok := visited[neighbor.Val]; !ok {
-			newNode = &Node{
+			newNode = &Node133{
 				Val:       neighbor.Val,
-				Neighbors: []*Node{},
+				Neighbors: []*Node133{},
 			}
 			visited[neighbor.Val] = newNode
 			dfs1332(neighbor, newNode, visited)
@@ -131,10 +131,10 @@ func TestcloneGraph() {
 	}
 
 	for _, testcase := range cases {
-		listNode := make(map[int]*Node)
+		listNode := make(map[int]*Node133)
 		for val, _ := range testcase.adjList {
 			id := val + 1
-			node := &Node{
+			node := &Node133{
 				Val: id,
 			}
 			listNode[id] = node
@@ -142,7 +142,7 @@ func TestcloneGraph() {
 
 		for val, edges := range testcase.adjList {
 			id := val + 1
-			listNode[id].Neighbors = []*Node{}
+			listNode[id].Neighbors = []*Node133{}
 			for _, e := range edges {
 				listNode[id].Neighbors = append(listNode[id].Neighbors, listNode[e])
 			}
@@ -151,7 +151,7 @@ func TestcloneGraph() {
 		res := cloneGraph(listNode[1])
 
 		visited := make(map[int][]byte)
-		print := func(node *Node) {
+		print := func(node *Node133) {
 			log.Printf("==node", node)
 			for i := range node.Neighbors {
 				visited[node.Val] = []byte{}
